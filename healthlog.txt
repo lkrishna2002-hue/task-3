@@ -1,0 +1,37 @@
+============================================================
+Health check - 2025-10-29 19:10:12 +0530
+
+---- System date and time ----
+Wed Oct 29 19:10:12 IST 2025
+
+---- Uptime ----
+ 19:10:12 up  3:42,  2 users,  load average: 0.12, 0.08, 0.05
+
+---- CPU load (from uptime) ----
+Load averages:  0.12, 0.08, 0.05
+Raw /proc/loadavg: 0.12 0.08 0.05 1/102 23456.78
+
+---- Memory usage (free -m) ----
+              total        used        free      shared  buff/cache   available
+Mem:           7853        3214        1240         123        3398        4260
+Swap:          2047           0        2047
+
+---- Disk usage (df -h) ----
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   12G   36G  25% /
+tmpfs           3.8G  1.2M  3.8G   1% /run
+/dev/sdb1       200G  140G   50G  74% /data
+
+---- Top 5 memory-consuming processes ----
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mysql     2345  1.2 21.4 1234568 170000 ?      Sl   10:03   2:45 /usr/sbin/mysqld
+java      6789  5.0 15.3 2345676 120000 ?      Sl   09:50   5:12 /usr/bin/java -jar app.jar
+python3   9876  0.8  4.0  345678  30000 ?      S    11:10   0:23 python3 server.py
+nginx     1111  0.2  1.8  125000 14000 ?      Ss   08:00   0:03 nginx: master process
+node      2222  3.4  1.2  150000 10000 ?      Sl   12:30   1:02 node server.js
+
+---- Service checks ----
+nginx: status=active, enabled=enabled
+ssh: status=active, enabled=enabled
+sshd: not running or not installed
+
