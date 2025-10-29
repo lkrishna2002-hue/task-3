@@ -1,0 +1,33 @@
+----------------------------------------
+System Health Check - Wed Oct 29 19:05:13 IST 2025
+----------------------------------------
+🕒 Date & Time: Wed Oct 29 19:05:13 IST 2025
+
+⏱️ Uptime:
+ 19:05:13 up 3 days,  5:24,  2 users,  load average: 0.15, 0.22, 0.18
+
+💻 CPU Load (from uptime):
+ 0.15, 0.22, 0.18
+
+🧠 Memory Usage (MB):
+              total        used        free      shared  buff/cache   available
+Mem:           7900        2315        3432         214        2152        5122
+Swap:          2047           0        2047
+
+💾 Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        50G   21G   27G  44% /
+
+🔥 Top 5 Memory-Consuming Processes:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      1221  2.3 15.1 142544 11932 ?        Ss   09:00   0:01 nginx: master process
+www-data  1222  1.8 10.3 129320 10324 ?        S    09:00   0:00 nginx: worker process
+mysql     1189  5.2  8.7 756444 87320 ?        Ssl  09:00   0:03 mysqld
+root       888  0.1  2.3  22000  2340 pts/0    Ss   08:55   0:00 bash
+user      1345  0.0  1.2  17000  1240 pts/0    R+   09:02   0:00 ps aux --sort=-%mem
+
+🔍 Service Status:
+ssh is RUNNING ✅
+nginx is RUNNING ✅
+
+✅ Health check completed successfully!
